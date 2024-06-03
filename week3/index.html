@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anketa</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="textheading">
+        <h1>Anketa</h1>
+        <hr />
+      </div>
+      <form action="#">
+        <h1>Mijoz ism familiyasi</h1>
+        <div class="mizojismfamiliya">
+          <div class="leftr">
+            <input
+              type="text"
+              placeholder="Ismingizni kiriting"
+              required
+              id="ismingiz"
+            />
+            <br />
+            <label for="ismingiz">Ismingizni kiriting</label>
+          </div>
+          <div class="rightl">
+            <input
+              type="text"
+              placeholder="Familiyangizni kiriting"
+              required
+              id="familiya"
+            />
+            <br />
+            <label for="familiya">Familiyangizni kiriting</label>
+          </div>
+        </div>
+        <div class="manzil">
+          <h1>Manzil</h1>
+          <input type="text" placeholder="ko'cha nomi" required id="kochasi" />
+          <label for="kochasi">Ko'cha nomi</label>
+          <input type="text" placeholder="Shahar" required id="Street" />
+          <label for="Street">Shahar</label>
+          <input type="number" required id="postindex" />
+          <label for="postindex">Pochta indeksi</label>
+
+          <select name="viloyat" id="country" required>
+            <option value="tashkent">Tashkent</option>
+            <option value="fargona">Farg'ona</option>
+            <option value="namangan">Namangan</option>
+            <option value="andijon">Andijon</option>
+            <option value="guliston">Guliston</option>
+            <option value="samarqand">Samarqand</option>
+            <option value="buxoro">Buxoro</option>
+            <option value="qashqadaryo">Qashqadaryo</option>
+            <option value="surxondaryo">Surxondaryo</option>
+            <option value="navoiy">Navoiy</option>
+            <option value="guliston">Guliston</option>
+            <option value="Nukus">Nukus</option>
+          </select>
+          <label for="country">Viloyatni tanlang</label>
+        </div>
+        <div class="boglanish">
+          <h1>Bog'lanish</h1>
+          <div class="leftr">
+            <input
+              type="number"
+              placeholder="+998886246440"
+              required
+              id="telefon"
+            />
+            <label for="telefon">Telefon raqamingizni kiriting</label>
+          </div>
+          <div class="rightl">
+            <input
+              type="email"
+              placeholder="Emailingizni kiriting"
+              required
+              id="mail"
+            />
+            <label for="mail">Email pochtani kiriting</label>
+          </div>
+        </div>
+        <div class="shaxsiymalumotlar">
+          <h1>Shaxsiy ma'lumotlar</h1>
+          <div class="inputers">
+            <input type="radio" name="jinsi" value="erkak" id="erkak" />
+            <label for="erkak">Erkak</label>
+            <input type="radio" name="jinsi" value="ayol" id="ayol" />
+            <label for="ayol">Ayol</label>
+            <input type="radio" name="jinsi" value="boshqa" id="boshqa" />
+            <label for="boshqa">Boshqa</label>
+          </div>
+        </div>
+        <div class="baholash">
+          <h1>Baholash</h1>
+          <div>
+            <span>Mexmonxona xizmati:</span>
+            <div class="inputer">
+              <input type="radio" name="afzaliklari" id="yomon" />
+              <label for="yomon">Yomon</label>
+              <input type="radio" name="afzaliklari" id="yaxshi" />
+              <label for="yaxshi">Yaxshi</label>
+              <input type="radio" name="afzaliklari" id="ajoyib" />
+              <label for="ajoyib">Ajoyib</label>
+            </div>
+          </div>
+          <div>
+            <span>Xodimlar xizmati:</span>
+            <div class="inputer">
+              <input type="radio" name="afzaliklari1" id="yomon1" />
+              <label for="yomon1">Yomon</label>
+              <input type="radio" name="afzaliklari1" id="yaxshi1" />
+              <label for="yaxshi1">Yaxshi</label>
+              <input type="radio" name="afzaliklari1" id="ajoyib1" />
+              <label for="ajoyib1">Ajoyib</label>
+            </div>
+          </div>
+          <div>
+            <span>Ovqatlar:</span>
+            <div class="inputer">
+              <input type="radio" name="afzaliklari2" id="yomon2" />
+              <label for="yomon2">Yomon</label>
+              <input type="radio" name="afzaliklari2" id="yaxshi2" />
+              <label for="yaxshi2">Yaxshi</label>
+              <input type="radio" name="afzaliklari2" id="ajoyib2" />
+              <label for="ajoyib2">Ajoyib</label>
+            </div>
+          </div>
+          <div>
+            <span>Servis xizmati:</span>
+            <div class="inputer">
+              <input type="radio" name="afzaliklari3" id="yomon3" />
+              <label for="yomon3">Yomon</label>
+              <input type="radio" name="afzaliklari3" id="yaxshi3" />
+              <label for="yaxshi3">Yaxshi</label>
+              <input type="radio" name="afzaliklari3" id="ajoyib3" />
+              <label for="ajoyib3">Ajoyib</label>
+            </div>
+          </div>
+          <div>
+            <span>Internet sifati:</span>
+            <div class="inputer">
+              <input type="radio" name="afzaliklari4" id="yomon4" />
+              <label for="yomon4">Yomon</label>
+              <input type="radio" name="afzaliklari4" id="yaxshi4" />
+              <label for="yaxshi4">Yaxshi</label>
+              <input type="radio" name="afzaliklari4" id="ajoyib4" />
+              <label for="ajoyib4">Ajoyib</label>
+            </div>
+          </div>
+          <div>
+            <span>Xonani tozaligi:</span>
+            <div class="inputer">
+              <input type="radio" name="afzaliklari5" id="yomon5" />
+              <label for="yomon5">Yomon</label>
+              <input type="radio" name="afzaliklari5" id="yaxshi5" />
+              <label for="yaxshi5">Yaxshi</label>
+              <input type="radio" name="afzaliklari5" id="ajoyib5" />
+              <label for="ajoyib5">Ajoyib</label>
+            </div>
+          </div>
+        </div>
+        <input type="submit" value="So'rov yuborilsin" />
+      </form>
+    </div>
+  </body>
+</html>

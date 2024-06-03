@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 45vw;
+    padding: 30px;
+    margin: 40px auto;
+    color: white;
+    background-color: rgb(21, 99, 172);
+    box-shadow: 12px 13px 7px 3px #053c6f;
+}
+h1{
+    margin: 10px;
+    text-align: center;
+}
+
+input, span, select{
+    font-size: 16px;
+}
+
+input[type=text], input[type=number], input[type=email], input[type=submit], select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+.baholash >div{
+   
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    width: 90%;
+}
+
+@media screen and (max-width: 992px) {
+    .baholash >div{
+      
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+      
+        width: 100%;
+    
+    }
+    span{
+        margin-bottom: 20px;
+    }
+}
+
+.inputers{
+    margin:  20px auto;
+    /* max-width: 300px; */
+}
+
+
+input[type=submit]{
+    /* width: 70%; */
+    display: block;
+    margin: 20px auto;
+}
