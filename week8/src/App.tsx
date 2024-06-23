@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route, useNavigate } from 'react-router-dom';
 import Protected from './guards/Protected';
 import RootLayout from './components/RootLayout';
 import Home from './Pages/Home';
@@ -19,10 +19,16 @@ function App() {
   const handlerLogout = () => {
     setUser(null);
   };
+  const navigate = useNavigate();
+
+  const handleraboutClick = () => {
+    navigate("/about", { replace: true })
+  }
 
   return (
-    <BrowserRouter>
+    <>
       {user ? <button onClick={handlerLogout}>Logout</button> : <button onClick={handlerLogin}>Login</button>}
+      <button onClick={handleraboutClick}>About</button>
       <Routes>
         <Route path="/" element={<RootLayout />}>
           <Route index element={<Home />} />
@@ -39,7 +45,8 @@ function App() {
           <Route path="*" element={<NotPages />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+
+    </>
   );
 }
 
