@@ -29,7 +29,11 @@ function App() {
       <Route path="/" element={<RootLayout />}>
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
-        <Route path="contacts" element={<Contacts />} />
+        <Route path="contacts" element={
+          <Protected user={user}>
+            <Contacts />
+          </Protected>
+        } />
         <Route path="*" element={<NotPages />} />
         <Route path="blog/:slag" element={<Protected user={user}>
           <Blog />
