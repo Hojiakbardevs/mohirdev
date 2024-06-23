@@ -16,36 +16,42 @@ function App() {
   const [user, setUser] = useState<Iuser | null>(null)
 
   const handlerLogin = () => {
-    setUser({id:1, name:"Abdulhakimov Hojiakbar", email:"abdulhakimovhojiakbar@gmail.com"})
+    setUser({ id: 1, name: "Abdulhakimov Hojiakbar", email: "abdulhakimovhojiakbar@gmail.com", role: "admin" })
   }
   const handlerLogout = () => {
     setUser(null)
-  } 
+  }
 
   return (
     <BrowserRouter>
-    {user ? <button onClick={handlerLogout}>Logout</button> : <button onClick={handlerLogin}>Login</button>}
-    <Routes>
-      <Route path="/" element={<RootLayout />}>
-        <Route index element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="contacts" element={
-          <Protected user={user}>
-            <Contacts />
-          </Protected>
-        } />
-        <Route path="*" element={<NotPages />} />
-        <Route path="blog/:slag" element={<Protected user={user}>
-          <Blog />
-        </Protected>} />
-        <Route path="profile" element={<Profile />}>
-          <Route index element={<h1>Please select options</h1>} />
-          <Route path='details' element={<h1>Details</h1>} />
-          <Route path='posts' element={<h1>Posts</h1>} />
-        </Route>
+      {user ? <button onClick={handlerLogout}>Logout</button> : <button onClick={handlerLogin}>Login</button>}
+      <Routes>
+        <Route path="/" element={<RootLayout />}>
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="contacts" element={
+            <Protected isAllowed={user?.role === "admin"}>
+              <Contacts />
+            </Protected>
+          } />
+          <Route path="*" element={<NotPages />} />
+          <Route path="blog/:slag" element={
+            <Protected isAllowed={user?.role === "admin"}>
+              <Blog />
+            </Protected>
+          } />
+          <Route path="profile" element={
+            <Protected isAllowed={user?.role === "admin"}>
+              <Profile />
+            </Protected>
+          }>
+            <Route index element={<h1>Please select options</h1>} />
+            <Route path='details' element={<h1>Details</h1>} />
+            <Route path='posts' element={<h1>Posts</h1>} />
+          </Route>
 
-      </Route>
-    </Routes>
+        </Route>
+      </Routes>
     </BrowserRouter>
   )
 }

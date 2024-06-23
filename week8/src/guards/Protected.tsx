@@ -1,18 +1,17 @@
-import React from 'react'
-import { Navigate } from 'react-router-dom'
-
-import { Iuser } from '../shared/interface/user.interface'
+import { ReactNode } from "react";
+import { Navigate, Outlet } from "react-router-dom";
 
 interface IProps {
-    user:Iuser | null
-    children: React.ReactNode
+  isAllowed: boolean;
+  children?: ReactNode;
+  redirectPath?: string;
 }
 
-const Protected = ({ user, children }: IProps) => {
-    if (!user) {
-        return <Navigate to="/" replace />
-    }
-    return children
-}
+const Protected = ({ isAllowed, children, redirectPath = "/" }: IProps) => {
+  if (!isAllowed) {
+    return <Navigate to={redirectPath} replace />;
+  }
+  return children ? children : <Outlet />;
+};
 
-export default Protected
+export default Protected;
