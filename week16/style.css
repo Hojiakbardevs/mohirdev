@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background: #dbdbdb98;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .login {
+  background-color: white;
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+  padding: 25px;
+}
+.container .login h2 {
+  font-size: 30px;
+  text-align: center;
+  color: #333;
+}
+.container .login-main form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+input{
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+label{
+    font-size: 15px;
+    color: #333;
+    font-weight: 500;
+}
+.checkbox-design{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 10px;
+}
+
+.login-footer{
+    text-align: center;
+    margin: 10px;
+    font-size: 15px;
+}
+.login-footer .image_footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    margin: 10px;
+}
+.login-footer .image_footer img{
+    width: 30px;
+    height: 30px;
+}
+#submited{
+    background-color: #333;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+#submited:hover{
+    background-color: #555;
+}
+#submited:active{
+    background-color: #777;
+}
