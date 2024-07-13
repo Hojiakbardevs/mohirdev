@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+}
+.container {
+  width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  padding-top: 40px;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  border: 1px solid burlywood;
+}
+.todo-app h2 {
+  text-align: center;
+  color: var(--black, #252525);
+  font-family: Kanit;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.row {
+  display: flex;
+  width: 750px;
+  align-items: center;
+  gap: 16px;
+}
+.row input {
+  display: flex;
+  height: 38px;
+  padding: 8px 16px;
+  align-items: center;
+  gap: 436px;
+  width: 80%;
+  border-radius: 5px;
+  border: 1px solid #6c63ff;
+  outline: none;
+  background: url("image/search-icon.svg") no-repeat right;
+  background-position: 98%;
+}
+
+.row input:focus {
+  border: 1px solid #2a22c2;
+}
+
+::placeholder {
+  color: #c3c1e5;
+}
+.row button {
+  padding: 8px 16px;
+  color: #f7f7f7;
+  background-color: #6c63ff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 18px */
+  text-transform: uppercase;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+.row button:hover {
+  background-color: #2920d1;
+}
+
+.row button:active {
+  background-color: #2a22c2;
+}
+
+
+.list-container{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 750px;
+  border: 1px solid #6c63ff;
+}

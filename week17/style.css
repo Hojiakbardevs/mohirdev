@@ -214,6 +214,6 @@ table td:first-child {
   justify-content: center;
 }
 .active-button{
-  color: white !important;
+  color: white !important ;
   background-color: #015F43 !important;
 }
