@@ -14,7 +14,6 @@
   flex-direction: column;
   align-items: center;
   gap: 18px;
-  border: 1px solid burlywood;
 }
 .todo-app h2 {
   text-align: center;
@@ -36,7 +35,7 @@
 }
 .row input {
   display: flex;
-  height: 38px;
+  height: 40px;
   padding: 8px 16px;
   align-items: center;
   gap: 436px;
@@ -60,6 +59,8 @@
   color: #f7f7f7;
   background-color: #6c63ff;
   border: none;
+  height: 40px;
+  outline: none;
   border-radius: 5px;
   font-size: 18px;
   font-style: normal;
@@ -80,22 +81,74 @@
   background-color: #2a22c2;
 }
 
-
-.list-container{
+.list-container {
   list-style: none;
   display: flex;
   flex-direction: column;
-  border: 1px solid #6c63ff;
   width: 40vw;
   gap: 16px;
 }
 .list-container li {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 16px;
   gap: 16px;
-  border-radius: 5px;
+  cursor: pointer;
+  border-bottom: 1px solid #6c63ff;
 }
-.list-container li input{
+.list-container li>div {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.list-container li:last-child {
+  border: none;
+}
+
+.settings img{
+  width: 20px;
+  height: 20px;
+ 
+}
+.list-container li input {
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+  border-radius: 2px;
+  cursor: pointer;
+  border: 1px solid #6c63ff;
+}
+
+.list-container li input:checked {
+  background-color: #6c63ff;
+}
+.list-container li input:checked + label {
+  text-decoration: line-through;
+  color: rgba(37, 37, 37, 0.5);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 20px */
+  text-decoration-line: line-through;
+  text-transform: uppercase;
+}
+
+
+.list-container li input:checked + label:active {
+  text-decoration: none;
+}
+.list-container li input:checked + label:checked {
+  text-decoration: line-through;
+}
+
+.list-container li label {
+  color: #252525;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
   
+  line-height: 100%; /* 20px */
+  text-transform: uppercase;
 }
