@@ -275,6 +275,8 @@ form input[type="submit"] {
     grid-template-rows: repeat(5, 1fr);
     grid-column-gap: 30px;
     grid-row-gap: 30px;
+    margin-bottom: 30px;
+    position: static;
   }
   .product1 {
     grid-area: 1 / 1 / 2 / 2;
@@ -303,6 +305,10 @@ form input[type="submit"] {
     height: 30px;
     fill: var(--whi-color);
   }
+  .container{
+    width: 100%;
+    padding: 0 30px;
+  }
 }
 @media screen and (max-width: 480px) {
   .products {
@@ -317,11 +323,9 @@ form input[type="submit"] {
   .product3 { grid-area: 3 / 1 / 4 / 2; }
   .product4 { grid-area: 4 / 1 / 5 / 2; }
   .product5 { grid-area: 5 / 1 / 6 / 2; }
+  
 
-  .container{
-    width: 100%;
-    padding: 0 15px;
-  }
+
   .footer-content{
     display: flex;
     flex-direction: column;
