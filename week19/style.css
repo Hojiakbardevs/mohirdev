@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --main-color: #02a28f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  background-color: var(--main-color);
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .logo a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.news {
+  padding: 22px 24px;
+  background-color: #fff;
+  border-radius: 10px;
+  background: #d9d9d9;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+  width: 744px;
+  height: 396px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  margin-top: 50px;
+}
+.news-item p {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.news-item h1 {
+  color: #000;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.news-title {
+  border-radius: 10px;
+  background: var(--main-color);
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
+  width: 744px;
+  height: 48px;
+  flex-shrink: 0;
+  margin: 20px 0;
+  color: #fff;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-left: 20px;
+}
+.card {
+  width: 360px;
+  height: 396px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+.card-header {
+  width: 360px;
+  height: 191px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #d9d9d9;
+}
+.card-title {
+  margin-top: 13px;
+  margin-left: 11px;
+}
+
+.card-title span {
+  color: #02a28f;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.card-title .card-text {
+  color: #616161;
+}
+.card-text-title {
+  font-size: 14px;
+  margin: 16px 0 13px 0;
+}
+.cards {
+  width: 744px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.flexbox {
+  display: flex;
+  gap: 25px;
+}
+
+footer {
+  background: var(--main-color);
+  height: 48px;
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.sidebar-title {
+  margin: 50px 0 20px 0;
+  border-radius: 10px;
+  background: var(--main-color);
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
+  width: 360px;
+  height: 48px;
+  flex-shrink: 0;
+  color: #fff;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar-items {
+  width: 360px;
+  height: 96px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #fff;
+  filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.1));
+  padding: 12px;
+  display: flex;
+  align-items: start;
+  gap: 12px;
+}
+.sidebar-item {
+  width: 132px;
+  height: 70px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #d9d9d9;
+}
+.sidebar-item-main h2 {
+  color: #000;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 8px;
+}
+
+.sidebar-item-main p {
+  color: #616161;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.sidebar-main {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.mar {
+  margin-top: 24px;
+}
+.sidebar-labels{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.sidebar-label {
+  color: #616161;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  display: flex;
+  justify-content: space-between;
+}
+
