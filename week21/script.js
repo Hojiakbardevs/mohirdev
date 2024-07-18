@@ -26,3 +26,14 @@ console.log(box)
 console.log(paragraph)
 
 // box.remove()
+
+
+// Hodisalar event learning 
+
+function myFunction(){
+    const heading = document.getElementById('heading')
+
+    heading.style.color = "red"
+    heading.style.backgroundColor = "black"
+    heading.textContent = 'Javascript o\'rganildi'
+}
